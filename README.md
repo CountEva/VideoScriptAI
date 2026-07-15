@@ -144,15 +144,14 @@ http://127.0.0.1:5000
 
 Demo video:
 
-*Add the Google Drive or YouTube link here.*
+*https://drive.google.com/file/d/1gFRxTGCxQI8Mnd6rt77KFKxeHy-1-i8E/view?usp=drive_link*
 
 ---
 
 ## Developed By
 
 **Mohit Atkaan**
-
-B.Tech Gaming & Technology
+**Nikhil**
 
 Manav Rachna International Institute of Research & Studies
 

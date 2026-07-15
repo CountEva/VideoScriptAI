@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VideoScriptAI</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🎬 VideoScriptAI</h1>
+        <p>Create AI-powered promotional video content in seconds.</p>
+
+        <div class="form">
+
+            <label>Product Name</label>
+            <input type="text" id="product" placeholder="e.g. Nike Running Shoes">
+
+            <label>Description</label>
+            <textarea id="description" rows="4"
+                placeholder="Describe your product..."></textarea>
+
+            <label>Target Audience</label>
+            <input type="text" id="audience" placeholder="College Students">
+
+            <label>Campaign Goal</label>
+            <input type="text" id="goal" placeholder="Increase Sales">
+
+            <label>Video Duration (seconds)</label>
+            <input type="number" id="duration" value="30">
+
+        </div>
+
+        <div class="buttons">
+
+            <button onclick="generateHook()">Generate Hook</button>
+
+            <button onclick="generateScript()">Generate Script</button>
+
+            <button onclick="generateScenes()">Generate Scenes</button>
+
+            <button onclick="generateCTA()">Generate CTA</button>
+
+            <button class="primary" onclick="generateAll()">
+                🚀 Generate Complete Package
+            </button>
+
+        </div>
+
+        <div class="results">
+
+            <div class="card">
+                <h2>🔥 Hook</h2>
+                <pre id="hookResult"></pre>
+            </div>
+
+            <div class="card">
+                <h2>📝 Script</h2>
+                <pre id="scriptResult"></pre>
+            </div>
+
+            <div class="card">
+                <h2>🎥 Scenes</h2>
+                <pre id="sceneResult"></pre>
+            </div>
+
+            <div class="card">
+                <h2>📢 Call To Action</h2>
+                <pre id="ctaResult"></pre>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+
+</html>

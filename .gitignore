@@ -1,0 +1,4 @@
+.env
+videoscriptai-env/
+__pycache__/
+*.pyc
